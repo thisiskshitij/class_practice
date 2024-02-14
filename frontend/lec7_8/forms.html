@@ -1,0 +1,98 @@
+<!-- author: Kshitij Singh -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+
+<body>
+
+
+    <form>
+
+        <fieldset>
+
+
+            <legend><h3><PRE>REGISTRATION FORM</PRE></h3></legend>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            
+            <br>
+            <br>
+
+
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender" value="MALE">
+            <label for="gender"> Male </label>
+            <input type="radio" id="female" name="gender" value="FEMALE">
+            <label for="gender"> Female </label>
+
+            
+            <br>
+            <br>
+            <label for="Country">Choose a country: </label>
+            <select name="country" id="city">
+                <option value="Ind">India</option>
+                <option value="USA">USA</option>
+                <option value="Aus">Australia</option>
+            </select>
+            <br>
+            <br>
+            
+
+            <label for="contact"> E-mail </label>
+            <input type="text" id="email" name="contactdet" value="" placeholder="xyz@email.com">
+            <br>
+            <br>
+            <label for="contact"> Password </label>
+            <input type="password" id="pass" name="contactdet" value="">
+            <br>
+            <br>
+            <label for="contact"> Confirm Password </label>
+            <input type="cpassword" id="cpass" name="contactdet" value="">
+            <br>
+            <br>
+            <label for="contact"> Contact number </label>
+            <input type="text" id="number" name="contactdet" value="" placeholder="+91">
+
+
+            <br>
+            <br>
+            
+
+
+            <input type="checkbox" name="tnc">
+            <label for="tnc"><u> I have read the Terms and Conditions and agree to them.</u></a></label>
+            <br>
+            <br>
+            <input type="submit" id ="sub">
+            <input type="reset">
+
+        </fieldset>
+
+    </form>
+<style>
+    body{
+        
+        background-color: beige;
+        font-size: medium;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    }
+    #sub{
+        background-color: rgb(43, 180, 226);
+    }
+</style>
+</body>
+
+</html>
+

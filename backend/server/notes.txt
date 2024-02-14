@@ -1,0 +1,7 @@
+1. created server
+2. returned different files from server as response
+3. returned multiple files from server as response (code error)
+4. Learn HTTP status code (mdnwebdocs/http status code)
+
+
+7. URL encode format is data along with URL

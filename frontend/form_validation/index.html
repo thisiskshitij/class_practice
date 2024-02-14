@@ -1,0 +1,54 @@
+<!-- Author - Kshitij Singh-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form onsubmit="return validation()">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <br>
+            <label>Name: <input type="text" id="name" name="name" placeholder="  Full Name"></label>
+            <span id="error" style="color: rgb(183, 255, 0);"></span>
+            <br>
+            <br>
+            <label>Email: <input type="email" id="email" name="email" placeholder="xyz@gmail.com"></label>
+            <br><br>
+            <label>Password: <input type="password" id="password" name="password"></label>
+            <label>Confirm Password: <input type="password" id="cpassword" name="cpassword"></label>
+            <br><br>
+
+            <input type="submit" value="submit" id="submit">
+
+
+
+
+
+        </fieldset>
+
+    </form>
+
+
+    <script>
+        function validation() {
+            var isValid = true;
+            if (document.getElementById('name').value == "") {
+
+                document.getElementById('error').innerHTML = '<br><br>Name cant be left blank'
+                console.log(document.getElementById('password').innerText);
+                isValid = false;
+
+            }
+            return isValid
+        }
+
+    </script>
+
+</body>
+
+</html>

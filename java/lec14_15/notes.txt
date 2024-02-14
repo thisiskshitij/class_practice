@@ -1,0 +1,3 @@
+learn labels
+learn arrays , mutidimensional , jagged etc .. 
+different ways to copy ,clone (4 methods)

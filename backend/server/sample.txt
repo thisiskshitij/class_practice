@@ -1,0 +1,2 @@
+Server is returning a sample.txt
+Hello, you just created your first server today.
