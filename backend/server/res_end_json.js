@@ -14,30 +14,33 @@ const fs = require('fs');
 
 //another method
 
-const server = http.createServer((req,res)=>{
-    if(req.url == '/'){
+const server = http.createServer((req, res) => {
+    if (req.url == '/') {
         //read the json file
-        fs.readFile('l3data.json','utf-8',(err,data)=>{
-            if(err){
+        fs.readFile('data.json', 'utf-8', (err, data) => {
+            if (err) {
                 console.error(err);
                 res.end('Interval server error')
                 return;
             }
             //set response header
-            res.writeHead(200,{'Content-Type': 'application/json'});
+            res.writeHead(200, { 'Content-Type': 'application/json' });
 
             //send json data as plain text
             res.end(data);
         });
     }
-    else{
+    else {
         //handle other routes
-        res.writeHead(404, {'Content-Type': 'text/plain'});
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('Not Found');
     }
 });
 
+
+
+
 const port = 3000;
-server.listen(port,()=>{
-    console.log(`server is ruuning on http://localhost:${port}`);
+server.listen(port, () => {
+    console.log(`server is ruuning on http://localhost: ${port}`);
 });
