@@ -1,0 +1,5 @@
+Initializer block is used to initialize class instance 
+intializer block will be invoked by jvm before invokation of constructor.
+Two types-
+	Instance intializer
+	Static initializer

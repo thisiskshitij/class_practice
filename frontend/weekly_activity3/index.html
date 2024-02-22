@@ -1,0 +1,34 @@
+<!--
+Task 1:  Assign the task to add an event listener to the interactive element (e.g., a button) that triggers a function when clicked.
+Task 2: Inside the function, participants should perform a dynamic action (e.g., change text, show/hide elements).
+-->
+<!DOCTYPE html>
+
+<head>
+    <title>Weekly_activity</title>
+</head>
+
+<body>
+    <!-- <script src="script.js" ></script> -->
+   
+
+    <h1>People entered: </h1>
+    <h2 id="count-el">0</h2>
+    <button id="increment" onclick="increment()"> Increment</button>
+    
+
+    <script>
+        let countEl = document.getElementById("count-el");
+        let count = 0
+
+        function increment() {
+            count = count + 1;
+            countEl.innerText = count;
+        }
+    </script>
+
+
+    </script>
+</body>
+
+</html>
