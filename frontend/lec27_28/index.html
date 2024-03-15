@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>  
+    <title>Remove event listener</title>
+</head>
+<body>
+
+    <div id="myDiv">
+        <button onclick="removeHandler()">Remove</button>
+        <button onclick="addHandler()">add</button>
+    </div>
+    <p id="demo"></p>
+
+    <script>
+        const myDiv=document.getElementById("myDiv")
+        myDiv.addEventListener("mousemove",myFunction);
+
+        function myFunction(){
+            document.getElementById("demo").innerText = Math.random();
+        }
+        function removeHandler(){
+            myDiv.removeEventListener("mousemove",myFunction);
+        }
+        function addHandler(){
+            myDiv.addEventListener("mousemove",myFunction);
+        } 
+        
+    </script>
+    
+</body>
+</html>

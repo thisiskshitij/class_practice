@@ -1,0 +1,2 @@
+Method overring is runtime polymorphism in which we create same method in the subclass that is already created in superclass.
+If we want to access superclass method then we use 'Super' keyword in the calling of method in the derived class.

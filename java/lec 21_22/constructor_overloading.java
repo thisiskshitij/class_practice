@@ -36,3 +36,13 @@ public class constructor_overloading {
     
     }
     }
+// 
+// static block - if we create static block then JVM checks static block before the main method.
+
+
+
+
+
+
+
+// Learn why we use this keyword in these kind of programs

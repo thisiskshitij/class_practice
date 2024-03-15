@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #button{
+            background-color: green ;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+    <script>
+
+        var str = document.querySelector("input").value;
+        // function revString(str){
+        // if (str === ""){
+        //     return "";}
+        // else{
+        //     return revString(str.substr(1)) + str.charAt(0);}
+
+        // rev = revString();
+        // console.log(rev);
+        // }
+
+        function revString(str){
+            var newString = "";
+            for(i=str.length-1;i>=0;i--){
+                newString+=str[i];
+            }
+            
+            document.querySelector('#container').innerText = newString;
+        }
+
+        
+
+    </script>
+    <center>
+    <div>
+        <input type="text" id="string">
+        <button id="button" onclick="revString()">Reverse</button>
+    </div>
+    <div id="container"></div>
+
+</center>
+
+
+
+</body>
+</html>
+
+
+<!-- Above is code for a page which reverses string-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<style>
+    #myDIV {
+        background-color: coral;
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The removeEventListener() Method</h2>
+
+    <div id="myDIV">
+        <button onclick="removeHandler()">Remove</button>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        const myDiv = document.getElementById("myDIV");
+        myDiv.addEventListener("mousemove", myFunction);
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = Math.random();
+        }
+
+        function removeHandler() {
+            myDiv.removeEventListener("mousemove", myFunction);
+        }
+
+        
+    </script>
+
+</body>
+</html> -->

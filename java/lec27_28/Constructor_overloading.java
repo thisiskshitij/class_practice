@@ -32,9 +32,9 @@ class Box {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        if (num==0){
-            for (int i=0;i<=3;i++)
-            System.out.println("Enter value (To stop press enter 0): ");
+        if (num == 0) {
+            for (int i = 0; i <= 3; i++)
+                System.out.println("Enter value (To stop press enter 0): ");
             sc.nextDouble();
             return;
         }

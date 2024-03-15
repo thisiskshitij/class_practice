@@ -1,0 +1,50 @@
+*,* :after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+    background-color: linear-gradient(to right bottom, #273c75,#079992);
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    padding: 40 px 0;
+}
+figure{
+    max-width: 800px;
+    margin:0 auto 40px;
+    border: 2px solid;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+}
+.thumb_img_list{}
+.thumb_img_list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.thumb_img_list ul li{
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.thumb_img_list ul li img{
+    display: block;
+}
