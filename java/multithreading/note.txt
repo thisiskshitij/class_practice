@@ -1,0 +1,9 @@
+Creating threads (two approaches) -
+    1. Using Thread class.
+    2. Using Runnable interface.
+    3. We can use anonymous class to implement Runnable
+
+learn abt epoch time
+
+Date format :
+use java.util *

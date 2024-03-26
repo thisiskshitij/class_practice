@@ -1,0 +1,4 @@
+2.In java object class method finalize is used for garbage collection notification this method is protected
+access specifier
+
+3.protected method invoked by function System.gc bfore applying System.gc , you must dereference object by NULL

@@ -1,0 +1,1 @@
+create a java program to implement single inheritance using non static nested class

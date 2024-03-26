@@ -1,0 +1,33 @@
+<!-- Create a to do list app using html,css, jquery.The app should allow users to add tasks , mark tasks as completed and deleted task.
+Requirement:
+1.Create an HTML structure for the todo list with input fields and buttons
+2.Style using css to make it visually appealing
+3.Implement functionality using jQuery:
+    i) Add functionality to add a new task when the user submits the input field.
+    ii) Implement the ability to mark tasks as completed by clicking on them.
+    iii) Add a button to delete tasks when are no longer needed.  
+4. Ensure that completed tasks are visually differentiated from incomplete tasks  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Enter task...">
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    <button id="clear-completed">Clear Completed</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
