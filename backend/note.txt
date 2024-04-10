@@ -1,0 +1,18 @@
+Build a user management system using node, express, sequelize and postgresql . System should have following features:
+
+User model: Create user model with following fields:
+    ID(primary key,Auto incrementing Integer)
+    email(String,unique, not null)
+    username (String Unique , NotNUll)
+    password (String not NULL)
+
+Endpoints
+    POST/users : Create a new user.The request body should contain username, email and password. Return the created user in the response
+    GET/users : Retrive all users.
+    GET/users/:id : Retrive a specific user by id.
+    PUT/users/:id Update a specific user by ID. Allow updating username, email and password.
+    DELETE/users/:id: Delete a specified user by ID.
+
+Database Connection: Establish a connection to a postgresql Database using sequelize. Ensure connection is successful before starting server
+
+
